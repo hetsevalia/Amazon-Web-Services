@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Diabetes Prediction</h1>
+        <p>Enter your health metrics below to predict the likelihood of diabetes.</p>
+        <form id="prediction-form">
+            <table>
+                <tr>
+                    <td><label for="pregnancies">Pregnancies:</label></td>
+                    <td><input type="number" id="pregnancies" name="Pregnancies" required></td>
+                </tr>
+                <tr>
+                    <td><label for="glucose">Glucose Level:</label></td>
+                    <td><input type="number" id="glucose" name="Glucose" required></td>
+                </tr>
+                <tr>
+                    <td><label for="bloodPressure">Blood Pressure:</label></td>
+                    <td><input type="number" id="bloodPressure" name="BloodPressure" required></td>
+                </tr>
+                <tr>
+                    <td><label for="skinThickness">Skin Thickness:</label></td>
+                    <td><input type="number" id="skinThickness" name="SkinThickness" required></td>
+                </tr>
+                <tr>
+                    <td><label for="insulin">Insulin Level:</label></td>
+                    <td><input type="number" id="insulin" name="Insulin" required></td>
+                </tr>
+                <tr>
+                    <td><label for="bmi">BMI:</label></td>
+                    <td><input type="number" step="0.1" id="bmi" name="BMI" required></td>
+                </tr>
+                <tr>
+                    <td><label for="diabetesPedigree">Diabetes Pedigree Function:</label></td>
+                    <td><input type="number" step="0.01" id="diabetesPedigree" name="DiabetesPedigreeFunction" required></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age:</label></td>
+                    <td><input type="number" id="age" name="Age" required></td>
+                </tr>
+            </table>
+            <button type="button" onclick="makePrediction()">Predict</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
